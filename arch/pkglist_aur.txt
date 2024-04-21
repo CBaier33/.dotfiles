@@ -1,0 +1,7 @@
+brave-bin
+browsh-bin
+github-cli-git
+github-cli-git-debug
+macchina
+swaylock-effects
+yay
