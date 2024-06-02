@@ -3,7 +3,7 @@
 
 # Introduction | Get User Inputs
 
-echo -e "Welcome to the Arch USB Installer\n"
+echo -e "Welcome to the Arch USB Installer"
 
 echo "If you have not already, please connect to the internet before running the script."
 
@@ -21,7 +21,7 @@ read -p "Enter timezone city: " city
 
 timedatectl set-timezone "${region}/${city}"
 
-echo -e "Choose a drive\n"
+echo -e "Choose a drive"
 
 lsblk
 
@@ -31,13 +31,13 @@ read -p "Enter here: " drive
 
 sgdisk -o -n 1:0:+10M -t 1:EF02 -n 2:0:+500M -t 2:EF00 -n 3:0:0 -t 3:8300 "$drive"
 
-echo -e "Creating File Systems\n"
+echo -e "Creating File Systems"
 
 mkfs.fat -F32 "${drive}2"
 
 mkfs.ext4 "${drive}3"
 
-echo -e "Mounting File System\n"
+echo -e "Mounting File System"
 
 mkdir -p /mnt/usb
 mount "${drive}3"
@@ -45,13 +45,13 @@ mount "${drive}3"
 mkdir -p /mnt/usb/boot
 mount "${drive}2" /mnt/usb/boot
 
-echo -e "Installing Base System\n"
+echo -e "Installing Base System"
 
 pacstrap /mnt/usb linux linux-firmware base vim
 
 genfstab -U /mnt/usb > /mnt/usb/etc/fstab
 
-echo -e "Entering Chroot Environment\n"
+echo -e "Entering Chroot Environment"
 
 arch-chroot /mnt/usb
 
