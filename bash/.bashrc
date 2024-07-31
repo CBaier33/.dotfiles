@@ -120,19 +120,14 @@ umask 0077
 cd
 
 # Aliases
-alias open=wslview
-alias web="cd ~/home/cs/classes/270/"
 alias python=python3
 alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 
 perg() {
 	neofetch --source ~/.config/neofetch/perg_ascii.txt
 }
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # ~/.bashrc
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/home/cs/go/sitemap/
+#export PATH=$PATH:/usr/local/go/bin
 
 eval "$(starship init bash)"
