@@ -1,0 +1,20 @@
+#install curl
+
+#install starship
+
+cp bashrc/profile into root
+
+install nvim    
+
+install gcc clang
+
+install packer.nvim
+
+source packer
+packerinstall
+
+install tmux
+cp tmux config
+install tmux repos
+
+  
