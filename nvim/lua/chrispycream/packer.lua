@@ -33,7 +33,8 @@ return require('packer').startup(function(use)
   use('jiangmiao/auto-pairs')
   use('shime/vim-livedown')
   use('nametake/golangci-lint-langserver')
-  -- use('sonph/onehalf')
+  use('tanvirtin/monokai.nvim', {run = ':TransparentEnable'}) --colorscheme
+  use('xiyaowong/transparent.nvim')
 
   -- install without yarn or npm
   use({
@@ -41,66 +42,22 @@ return require('packer').startup(function(use)
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  --use ({
-  --    'akinsho/flutter-tools.nvim',
-  --    dependencies = {
-  --      'nvim-lua/plenary.nvim',
-  --      'stevearc/dressing.nvim',
-  --    },
-  --    config = true,
-  --})
-  
---  use ({
---      'ribru17/bamboo.nvim',
---      as = 'bamboo',
---      config = function()
---    	  vim.cmd('colorscheme bamboo')
--- 
---      end
---  })
 
- -- use ({
- --     'bluz71/vim-moonfly-colors',
- --     as = 'moonfly',
- --     config = function()
- --   	  vim.cmd('colorscheme moonfly')
- --
- --     end
- -- })
+  use {
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v3.x',
+  requires = {
+    --- Uncomment these if you want to manage the language servers from neovim
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
 
- -- use ({
- --     'bluz71/vim-nightfly-colors',
- --     as = 'nightfly',
- --     config = function()
- --   	  vim.cmd('colorscheme nightfly')
- --
- --     end
- -- })
-
-  use ({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine-moon')
-
-	  end
-  })
-
-    use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
-	  requires = {
-		  --- Uncomment these if you want to manage the language servers from neovim
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
-
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
-	  }
+    -- LSP Support
+    {'neovim/nvim-lspconfig'},
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'L3MON4D3/LuaSnip'},
+  }
 }
 
   use('neovim/nvim-lspconfig')

@@ -10,4 +10,3 @@ vim.opt.expandtab = true
 vim.opt.guicursor= "a:block-blinkon0"
 
 vim.opt.hlsearch = false
-

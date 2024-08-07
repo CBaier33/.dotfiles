@@ -17,4 +17,6 @@ install tmux
 cp tmux config
 install tmux repos
 
-  
+#####  
+
+install npm

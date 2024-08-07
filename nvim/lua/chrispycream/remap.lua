@@ -18,5 +18,7 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("i", "jk", "<Esc>ll")
 
+vim.keymap.set("n", "<leader>b", ":TransparentToggle<CR>")
+
 
 vim.keymap.set("n", ";", ':')
