@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-surround')
   use('alvan/vim-closetag') 
   use('jiangmiao/auto-pairs')
-  use('shime/vim-livedown')
+  use('shime/vim-livedown'
   use('nametake/golangci-lint-langserver')
   use('tanvirtin/monokai.nvim', {run = ':TransparentEnable'}) --colorscheme
   use('xiyaowong/transparent.nvim')
