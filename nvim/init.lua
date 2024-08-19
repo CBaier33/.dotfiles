@@ -1,9 +1,6 @@
-require("remap")
-require("set")
+require("config.lazy")
+require("config.remap")
+require("config.set")
 
-require("plugins.plugins")
-require("plugins.treesitter")
-require("plugins.harpoon")
-require("plugins.lsp")
-
-require('monokai').setup { palette = require('monokai').ristretto };
+require('monokai').setup { palette = require('monokai').ristretto }; -- colorscheme
+vim.cmd('silent! TransparentEnable') -- Enable Transparency on startup

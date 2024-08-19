@@ -1,38 +1,166 @@
-local vim = vim
-local Plug = vim.fn['plug#']
+return {
+  {'vim-airline/vim-airline'}, -- vim airline
+  {'vim-airline/vim-airline-themes'}, -- airline themes
+  {'preservim/nerdtree'}, -- NerdTree
+  {'tpope/vim-surround'}, -- Parenthese completion
+  {'alvan/vim-closetag'},
+  {'jiangmiao/auto-pairs'},
 
-vim.call('plug#begin')
+  {'nvim-telescope/telescope.nvim',
+    tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
 
-Plug 'vim-airline/vim-airline' -- vim airline
-Plug 'vim-airline/vim-airline-themes' -- airline themes
-Plug 'preservim/nerdtree' -- NerdTree
-Plug 'tpope/vim-surround' -- Parenthese completion
-Plug 'alvan/vim-closetag'
-Plug 'jiangmiao/auto-pairs'
+  {'theprimeagen/harpoon'},
 
-Plug 'nvim-lua/plenary.nvim'
-Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
-Plug 'theprimeagen/harpoon'
+  {'xiyaowong/transparent.nvim'}, -- Transparant Backgrounds
+  {'tanvirtin/monokai.nvim'}, --colorscheme
 
-Plug('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-Plug('VonHeikemen/lsp-zero.nvim', {['branch']= 'v3.x'})
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'L3MON4D3/LuaSnip'
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" }
+  },
+  {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v4.x',
+    lazy = true,
+    config = false,
+  },
+  {
+    'williamboman/mason.nvim',
+    lazy = false,
+    config = true, },
 
-Plug('iamcco/markdown-preview.nvim', { ['do'] = function() -- Markdown Previews
-  vim.fn['mkdp#util#install()']()
-end, ['for'] = 'markdown'})
--- Need to run ":call mkdp#util#install()" within a markdown file to work correctly.
- 
-Plug 'xiyaowong/transparent.nvim' -- Transparant Backgrounds
-Plug 'tanvirtin/monokai.nvim' --colorscheme
+  -- Autocompletion
+  {
+    'hrsh7th/nvim-cmp',
+    event = 'InsertEnter',
+    dependencies = {
+      {'L3MON4D3/LuaSnip'},
+    },
+    config = function()
+      local cmp = require('cmp')
 
-Plug 'nametake/golangci-lint-langserver'
+      cmp.setup({
+        sources = {
+          {name = 'nvim_lsp'},
+        },
+        mapping = cmp.mapping.preset.insert({
+          ['<C-Space>'] = cmp.mapping.complete(),
+          ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+          ['<C-d>'] = cmp.mapping.scroll_docs(4),
+        }),
+        snippet = {
+          expand = function(args)
+            vim.snippet.expand(args.body)
+          end,
+        },
+      })
+    end
+  },
 
-vim.call('plug#end')
+  -- LSP
+  {
+    'neovim/nvim-lspconfig',
+    cmd = {'LspInfo', 'LspInstall', 'LspStart'},
+    event = {'BufReadPre', 'BufNewFile'},
+    dependencies = {
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
+    },
+    config = function()
+      local lsp_zero = require('lsp-zero')
 
-vim.cmd('silent! TransparentEnable') -- Enable Transparency on startup
+      -- lsp_attach is where you enable features that only work
+      -- if there is a language server active in the file
+      local lsp_attach = function(client, bufnr)
+        local opts = {buffer = bufnr}
+
+        vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+        vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
+        vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
+        vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
+        vim.keymap.set('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
+        vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
+        vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+        vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+        vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
+        vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+      end
+
+      lsp_zero.extend_lspconfig({
+        sign_text = true,
+        lsp_attach = lsp_attach,
+        capabilities = require('cmp_nvim_lsp').default_capabilities()
+      })
+
+      require('mason-lspconfig').setup({
+        ensure_installed = {},
+        handlers = {
+          -- this first function is the "default handler"
+          -- it applies to every language server without a "custom handler"
+          function(server_name)
+            require('lspconfig')[server_name].setup({})
+          end,
+        }
+      })
+    end
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function () 
+      local configs = require("nvim-treesitter.configs")
+
+      configs.setup({
+          ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+          auto_install = true,
+          indent = { enable = true },  
+        })
+    end,
+  },
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("hlchunk").setup({
+        chunk = {
+          enable = true,
+          priority = 15,
+          style = {
+            { fg = "#806d9c" },
+            { fg = "#c21f30" },
+          },
+          use_tresitter = true,
+          chars = {
+            horizontal_line = "-",
+            vertical_line = "|",
+            left_top = "╭",
+            left_bottom = "╰",
+            right_arrow = ">",
+          },
+          textobject = "",
+          left_bottom = "╰",
+          right_arrow = ">",
+        },
+        indent = {
+          enable = true,
+          priority = 10,
+          style = { vim.api.nvim_get_hl(0, { name = "Whitespace" }) },
+          use_treesitter = false,
+          chars = { "│" },
+          ahead_lines = 5,
+          delay = 100,
+        },
+        line_num = { enable = false },
+        blank = { enable = false },
+      })
+    end
+  }
+}
