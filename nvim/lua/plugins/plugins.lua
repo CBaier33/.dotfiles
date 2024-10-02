@@ -125,42 +125,42 @@ return {
         })
     end,
   },
-  {
-    "shellRaining/hlchunk.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("hlchunk").setup({
-        chunk = {
-          enable = true,
-          priority = 15,
-          style = {
-            { fg = "#806d9c" },
-            { fg = "#c21f30" },
-          },
-          use_tresitter = true,
-          chars = {
-            horizontal_line = "-",
-            vertical_line = "|",
-            left_top = "╭",
-            left_bottom = "╰",
-            right_arrow = ">",
-          },
-          textobject = "",
-          left_bottom = "╰",
-          right_arrow = ">",
-        },
-        indent = {
-          enable = true,
-          priority = 10,
-          style = { vim.api.nvim_get_hl(0, { name = "Whitespace" }) },
-          use_treesitter = false,
-          chars = { "│" },
-          ahead_lines = 5,
-          delay = 100,
-        },
-        line_num = { enable = false },
-        blank = { enable = false },
-      })
-    end
-  }
+--{
+--  "shellRaining/hlchunk.nvim",
+--  event = { "BufReadPre", "BufNewFile" },
+--  config = function()
+--    require("hlchunk").setup({
+--      chunk = {
+--        enable = true,
+--        priority = 15,
+--        style = {
+--          { fg = "#806d9c" },
+--          { fg = "#c21f30" },
+--        },
+--        use_tresitter = true,
+--        chars = {
+--          horizontal_line = "-",
+--          vertical_line = "|",
+--          left_top = "╭",
+--          left_bottom = "╰",
+--          right_arrow = ">",
+--        },
+--        textobject = "",
+--        left_bottom = "╰",
+--        right_arrow = ">",
+--      },
+--      indent = {
+--        enable = true,
+--        priority = 10,
+--        style = { vim.api.nvim_get_hl(0, { name = "Whitespace" }) },
+--        use_treesitter = false,
+--        chars = { "│" },
+--        ahead_lines = 5,
+--        delay = 100,
+--      },
+--      line_num = { enable = false },
+--      blank = { enable = false },
+--    })
+--  end
+--}
 }
