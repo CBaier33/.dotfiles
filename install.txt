@@ -6,7 +6,7 @@ cp bashrc/profile into root
 
 install nvim    
 
-install gcc clang
+install gcc clang xclip
 
 install packer.nvim
 
