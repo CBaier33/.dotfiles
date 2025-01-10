@@ -1,6 +1,0 @@
-2024/02/01-18:26:04.003 42e Creating DB /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb since it was missing.
-2024/02/01-18:26:04.167 42e Reusing MANIFEST /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/02/01-18:44:20.185 42e Level-0 table #5: started
-2024/02/01-18:44:20.227 42e Level-0 table #5: 208487 bytes OK
-2024/02/01-18:44:20.256 42e Delete type=0 #3
-2024/02/01-18:44:20.257 42e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
