@@ -1,0 +1,403 @@
+[2024-04-29 12:08:57.211] [20025] (engine.cpp:529): Created native Engine, time: Mon Apr 29 12:08:57 2024 EDT, logPath: /home/topher2/.config/discord/0.0.51/modules/discord_voice/, logLevel: 2
+[2024-04-29 12:08:57.221] [20025] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-04-29 12:08:57.222] [20025] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-04-29 12:08:57.222] [20025] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-04-29 12:08:57.222] [20025] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.222] [20025] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.223] [20025] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:143): current platform is Linux
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-04-29 12:08:57.223] [20025] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-04-29 12:08:57.223] [20025] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-04-29 12:08:57.223] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-04-29 12:08:57.223] [20025] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-04-29 12:08:57.223] [20025] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-04-29 12:08:57.224] [20025] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:143): current platform is Linux
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-04-29 12:08:57.224] [20025] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-04-29 12:08:57.224] [20025] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-04-29 12:08:57.224] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-04-29 12:08:57.224] [20025] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-04-29 12:08:57.224] [20025] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-04-29 12:08:57.224] [20025] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-04-29 12:08:57.224] [20025] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-04-29 12:08:57.224] [20025] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.224] [20025] (audio_engine.cpp:436): Creating audio engine: standard
+[2024-04-29 12:08:57.224] [20025] (audio_device_impl.cc:364): Init
+[2024-04-29 12:08:57.233] [20025] (audio_device_impl.cc:364): Init
+[2024-04-29 12:08:57.234] [20025] (audio_coding.cpp:149): Using software Opus decoder
+[2024-04-29 12:08:57.234] [20025] (audio_coding.cpp:166): Using software Opus encoder
+[2024-04-29 12:08:57.234] [20025] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-04-29 12:08:57.234] [20025] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-04-29 12:08:57.234] [20025] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-04-29 12:08:57.234] [20025] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-04-29 12:08:57.234] [20025] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-04-29 12:08:57.235] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-04-29 12:08:57.235] [20025] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-04-29 12:08:57.235] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-04-29 12:08:57.235] [20025] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-04-29 12:08:57.235] [20025] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-04-29 12:08:57.235] [20025] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:619): output: 1
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-04-29 12:08:57.235] [20025] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-04-29 12:08:57.235] [20025] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-04-29 12:08:57.235] [20025] (audio_device_impl.cc:914): output: 0
+[2024-04-29 12:08:57.235] [20025] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.246] [20025] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-04-29 12:08:57.254] [20025] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-04-29 12:08:57.254] [20025] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-04-29 12:08:57.254] [20025] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.254] [20025] (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+[2024-04-29 12:08:57.254] [20025] (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+[2024-04-29 12:08:57.254] [20025] (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+[2024-04-29 12:08:57.254] [20025] (captured_audio_processor.cpp:132): SetNoiseCancellation: 0
+[2024-04-29 12:08:57.254] [20025] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-04-29 12:08:57.254] [20025] (field_trial.cc:164): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:236): *** OnDevicesChanged:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:237): * audioInput:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:240): - default: alsa_output.pci-0000_00_1f.3.hdmi-stereo.monitor ()
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:240): - Built-in Audio Analog Stereo ()
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:242): * audioOutput:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:236): *** OnDevicesChanged:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:237): * audioInput:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:240): - default: alsa_output.pci-0000_00_1f.3.hdmi-stereo.monitor ()
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:240): - Built-in Audio Analog Stereo ()
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:242): * audioOutput:
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:245): - default: Built-in Audio Digital Stereo (HDMI) ()
+[2024-04-29 12:08:57.255] [20025] (engine.cpp:245): - Built-in Audio Digital Stereo (HDMI) ()
+[2024-04-29 12:08:57.380] [20025] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-04-29 12:08:57.380] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-04-29 12:08:57.380] [20025] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-04-29 12:08:57.380] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-04-29 12:08:57.380] [20025] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-04-29 12:08:57.380] [20025] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-04-29 12:08:57.380] [20025] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-04-29 12:08:57.380] [20025] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-04-29 12:08:57.381] [20025] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-04-29 12:08:57.381] [20025] (audio_device_impl.cc:619): output: 1
+[2024-04-29 12:08:57.381] [20025] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-04-29 12:08:57.381] [20025] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-04-29 12:08:57.381] [20025] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-04-29 12:08:57.381] [20025] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-04-29 12:08:57.381] [20025] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-04-29 12:08:57.403] [20002] (discord.cpp:753): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 288460, Version Hash: c8280c6f6b6e3dc8063a85671dfbc9ed2c4fada6"]
+[2024-04-29 12:08:57.865] [20002] (discord.cpp:753): JS console: ["%c[default]","[NATIVE INFO] host 0.0.51, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_zstd: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2024-04-29 12:08:57.902] [20025] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-04-29 12:08:57.902] [20025] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-04-29 12:08:57.902] [20025] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-04-29 12:08:57.902] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-04-29 12:08:57.902] [20025] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-04-29 12:08:57.902] [20025] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-04-29 12:08:57.903] [20025] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-04-29 12:08:57.903] [20025] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-04-29 12:08:57.903] [20025] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-04-29 12:08:57.903] [20025] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-04-29 12:08:57.903] [20025] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-04-29 12:08:57.903] [20025] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-04-29 12:08:57.903] [20025] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-04-29 12:08:57.903] [20025] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-04-29 12:08:57.903] [20025] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-04-29 12:08:57.904] [20025] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-04-29 12:08:57.904] [20025] (audio_device_impl.cc:619): output: 1
+[2024-04-29 12:08:57.904] [20025] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-04-29 12:08:57.904] [20025] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-04-29 12:08:58.006] [20002] (discord.cpp:753): JS console: ["Initializing krisp module"]
+[2024-04-29 12:08:59.896] [20002] (discord.cpp:753): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2024-04-29 12:09:00.132] [20002] (discord.cpp:753): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2024-04-29 12:09:00.722] [20002] (discord.cpp:753): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2024-04-29 12:09:00.940] [20002] (discord.cpp:753): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-04-29 12:09:00.986] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:09:00.986] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2024-04-29 12:09:00.986] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 0 ms"]
+[2024-04-29 12:09:01.075] [20002] (discord.cpp:753): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2024-04-29 12:09:01.113] [20002] (discord.cpp:753): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2024-04-29 12:09:01.631] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[READY] took 644ms, as b400c69d398ae054b6877c5434817286"]
+[2024-04-29 12:09:01.639] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2024-04-29 12:09:01.641] [20002] (discord.cpp:753): JS console: ["%c[DatabaseManager]","removing database (user: 421457966244429826, database: undefined)"]
+[2024-04-29 12:09:01.649] [20002] (discord.cpp:753): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2024-04-29 12:09:01.656] [20002] (discord.cpp:753): JS console: ["%c[Spotify]","WS Connecting"]
+[2024-04-29 12:09:01.657] [20002] (discord.cpp:753): JS console: ["%c[Spotify]","Added account: ejll91ek34l44hguc58nt9uw5"]
+[2024-04-29 12:09:01.661] [20002] (discord.cpp:753): JS console: ["%c[GatewayZstdStore]","Setting Zstd to true"]
+[2024-04-29 12:09:01.686] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 700ms"]
+[2024-04-29 12:09:02.013] [20002] (discord.cpp:753): JS console: ["%c[Spotify]","Removed account: ejll91ek34l44hguc58nt9uw5"]
+[2024-04-29 12:09:10.806] [20326] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-04-29 12:09:10.806] [20326] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-04-29 12:09:10.806] [20326] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-04-29 12:09:10.806] [20326] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-04-29 12:09:10.806] [20326] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-04-29 12:09:10.852] [20326] (region_latency_tester.cpp:283): Average RTT for region atlanta is 21.5
+[2024-04-29 12:09:10.852] [20326] (region_latency_tester.cpp:283): Average RTT for region us-east is 33.75
+[2024-04-29 12:09:10.852] [20326] (region_latency_tester.cpp:283): Average RTT for region us-south is 38
+[2024-04-29 12:09:10.852] [20326] (region_latency_tester.cpp:283): Average RTT for region newark is 40
+[2024-04-29 12:09:10.852] [20326] (region_latency_tester.cpp:283): Average RTT for region us-central is 45
+[2024-04-29 12:09:11.658] [20002] (discord.cpp:753): JS console: ["%c[ReadStateStore]","Deleting ReadState","1222776826263240785","0","[object Object]"]
+[2024-04-29 12:09:51.963] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.45 seconds."]
+[2024-04-29 12:09:54.409] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream"]
+[2024-04-29 12:09:54.579] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 170 ms"]
+[2024-04-29 12:09:54.580] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 7"]
+[2024-04-29 12:09:54.663] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:09:54.664] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 255ms, replayed 0 events, new seq: 8"]
+[2024-04-29 12:14:53.667] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.53 seconds."]
+[2024-04-29 12:14:55.194] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream"]
+[2024-04-29 12:14:55.270] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 76 ms"]
+[2024-04-29 12:14:55.271] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 13"]
+[2024-04-29 12:14:55.341] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:14:55.341] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 147ms, replayed 0 events, new seq: 14"]
+[2024-04-29 12:25:12.114] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.10 seconds."]
+[2024-04-29 12:25:13.212] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream"]
+[2024-04-29 12:25:13.323] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 111 ms"]
+[2024-04-29 12:25:13.323] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 30"]
+[2024-04-29 12:25:13.385] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:25:13.394] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 182ms, replayed 0 events, new seq: 31"]
+[2024-04-29 12:30:13.506] [20002] (discord.cpp:753): JS console: ["%c[GatewayZstdStore]","Disabling zstd due to consecutive errors"]
+[2024-04-29 12:30:13.507] [20002] (discord.cpp:753): JS console: ["%c[GatewayZstdStore]","Setting Zstd to false"]
+[2024-04-29 12:30:13.508] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.32 seconds."]
+[2024-04-29 12:30:15.826] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream"]
+[2024-04-29 12:30:15.908] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 82 ms"]
+[2024-04-29 12:30:15.908] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 36"]
+[2024-04-29 12:30:15.969] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:30:15.970] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 143ms, replayed 0 events, new seq: 37"]
+[2024-04-29 12:31:32.113] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.51 seconds."]
+[2024-04-29 12:31:33.625] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:31:33.739] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 114 ms"]
+[2024-04-29 12:31:33.740] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 40"]
+[2024-04-29 12:31:33.823] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:31:33.824] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 198ms, replayed 0 events, new seq: 41"]
+[2024-04-29 12:36:35.613] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.81 seconds."]
+[2024-04-29 12:36:38.425] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:36:38.567] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 142 ms"]
+[2024-04-29 12:36:38.568] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 48"]
+[2024-04-29 12:36:38.630] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:36:38.634] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 209ms, replayed 0 events, new seq: 49"]
+[2024-04-29 12:37:52.231] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.74 seconds."]
+[2024-04-29 12:37:53.972] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:37:54.057] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 85 ms"]
+[2024-04-29 12:37:54.058] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 51"]
+[2024-04-29 12:37:54.132] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:37:54.133] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 160ms, replayed 0 events, new seq: 52"]
+[2024-04-29 12:42:53.748] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.30 seconds."]
+[2024-04-29 12:42:55.048] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:42:55.156] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 108 ms"]
+[2024-04-29 12:42:55.156] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 57"]
+[2024-04-29 12:42:55.216] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:42:55.222] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 174ms, replayed 0 events, new seq: 58"]
+[2024-04-29 12:44:12.210] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.23 seconds."]
+[2024-04-29 12:44:13.440] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:44:13.508] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 68 ms"]
+[2024-04-29 12:44:13.509] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 60"]
+[2024-04-29 12:44:13.588] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:44:13.589] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 149ms, replayed 0 events, new seq: 61"]
+[2024-04-29 12:49:13.988] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.37 seconds."]
+[2024-04-29 12:49:16.354] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:49:16.427] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 73 ms"]
+[2024-04-29 12:49:16.427] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 65"]
+[2024-04-29 12:49:16.486] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:49:16.486] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 132ms, replayed 0 events, new seq: 66"]
+[2024-04-29 12:50:32.020] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.57 seconds."]
+[2024-04-29 12:50:33.588] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:50:33.733] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 144 ms"]
+[2024-04-29 12:50:33.733] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 68"]
+[2024-04-29 12:50:33.814] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:50:33.819] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 231ms, replayed 0 events, new seq: 69"]
+[2024-04-29 12:55:33.480] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.38 seconds."]
+[2024-04-29 12:55:35.865] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:55:35.983] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 118 ms"]
+[2024-04-29 12:55:35.984] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 78"]
+[2024-04-29 12:55:36.045] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:55:36.053] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 188ms, replayed 0 events, new seq: 79"]
+[2024-04-29 12:57:11.657] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.98 seconds."]
+[2024-04-29 12:57:12.457] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:57:12.539] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 81 ms"]
+[2024-04-29 12:57:12.539] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 82"]
+[2024-04-29 12:57:12.599] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:57:12.599] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 142ms, replayed 0 events, new seq: 83"]
+[2024-04-29 12:58:31.990] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.83 seconds."]
+[2024-04-29 12:58:33.821] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 12:58:33.948] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 126 ms"]
+[2024-04-29 12:58:33.948] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 85"]
+[2024-04-29 12:58:34.010] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 12:58:34.011] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 190ms, replayed 0 events, new seq: 86"]
+[2024-04-29 13:03:33.729] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.64 seconds."]
+[2024-04-29 13:03:35.369] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:03:35.450] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 80 ms"]
+[2024-04-29 13:03:35.450] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 93"]
+[2024-04-29 13:03:35.517] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:03:35.517] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 148ms, replayed 0 events, new seq: 94"]
+[2024-04-29 13:04:51.990] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.62 seconds."]
+[2024-04-29 13:04:53.615] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:04:53.705] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 90 ms"]
+[2024-04-29 13:04:53.705] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 97"]
+[2024-04-29 13:04:53.784] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:04:53.785] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 170ms, replayed 0 events, new seq: 98"]
+[2024-04-29 13:07:39.704] [20002] (discord.cpp:753): JS console: ["%c[MessageActionCreators]","Fetching messages for 1161673937298669669 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-04-29 13:07:40.040] [20002] (discord.cpp:753): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1161673937298669669 isBefore:false isAfter:false"]
+[2024-04-29 13:07:40.046] [20002] (discord.cpp:753): JS console: ["%c[ChannelMessages]","loadComplete: resetting state for channelId=1161673937298669669, sending.length=0"]
+[2024-04-29 13:09:53.914] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.00 seconds."]
+[2024-04-29 13:09:55.912] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:09:56.048] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 136 ms"]
+[2024-04-29 13:09:56.048] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 110"]
+[2024-04-29 13:09:56.107] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:09:56.116] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 204ms, replayed 0 events, new seq: 111"]
+[2024-04-29 13:11:31.871] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.69 seconds."]
+[2024-04-29 13:11:32.498] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:11:32.590] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 91 ms"]
+[2024-04-29 13:11:32.590] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 115"]
+[2024-04-29 13:11:32.655] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:11:32.656] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 157ms, replayed 0 events, new seq: 116"]
+[2024-04-29 13:44:51.989] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.09 seconds."]
+[2024-04-29 13:44:53.076] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:44:53.249] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 173 ms"]
+[2024-04-29 13:44:53.250] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 145"]
+[2024-04-29 13:44:53.312] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:44:53.313] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 237ms, replayed 0 events, new seq: 146"]
+[2024-04-29 13:49:53.613] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.76 seconds."]
+[2024-04-29 13:49:55.370] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 13:49:55.488] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 117 ms"]
+[2024-04-29 13:49:55.489] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 152"]
+[2024-04-29 13:49:55.549] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 13:49:55.555] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 184ms, replayed 0 events, new seq: 153"]
+[2024-04-29 14:05:52.070] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.79 seconds."]
+[2024-04-29 14:05:54.864] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 14:05:55.002] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 137 ms"]
+[2024-04-29 14:05:55.002] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 171"]
+[2024-04-29 14:05:55.073] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 14:05:55.074] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 210ms, replayed 0 events, new seq: 172"]
+[2024-04-29 14:10:53.906] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.34 seconds."]
+[2024-04-29 14:10:55.248] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 14:10:55.360] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 112 ms"]
+[2024-04-29 14:10:55.361] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 181"]
+[2024-04-29 14:10:55.422] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 14:10:55.431] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 183ms, replayed 0 events, new seq: 183"]
+[2024-04-29 14:12:12.042] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.01 seconds."]
+[2024-04-29 14:12:14.056] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 14:12:14.138] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 81 ms"]
+[2024-04-29 14:12:14.138] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 186"]
+[2024-04-29 14:12:14.203] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 14:12:14.209] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 153ms, replayed 0 events, new seq: 187"]
+[2024-04-29 14:17:13.937] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.50 seconds."]
+[2024-04-29 14:17:15.440] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 14:17:15.555] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 115 ms"]
+[2024-04-29 14:17:15.556] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 193"]
+[2024-04-29 14:17:15.632] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 14:17:15.639] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 199ms, replayed 0 events, new seq: 194"]
+[2024-04-29 15:26:08.201] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.15 seconds."]
+[2024-04-29 15:26:09.353] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 15:26:09.479] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 126 ms"]
+[2024-04-29 15:26:09.480] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 377"]
+[2024-04-29 15:26:09.550] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 15:26:09.551] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 198ms, replayed 0 events, new seq: 378"]
+[2024-04-29 15:27:31.970] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.38 seconds."]
+[2024-04-29 15:27:33.348] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 15:27:33.441] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 93 ms"]
+[2024-04-29 15:27:33.441] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 382"]
+[2024-04-29 15:27:33.517] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 15:27:33.523] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 175ms, replayed 0 events, new seq: 383"]
+[2024-04-29 15:32:33.773] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.42 seconds."]
+[2024-04-29 15:32:36.193] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 15:32:36.315] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 122 ms"]
+[2024-04-29 15:32:36.315] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 402"]
+[2024-04-29 15:32:36.384] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 15:32:36.385] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 192ms, replayed 0 events, new seq: 403"]
+[2024-04-29 15:38:32.016] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.12 seconds."]
+[2024-04-29 15:38:34.140] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 15:38:34.218] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 78 ms"]
+[2024-04-29 15:38:34.218] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 415"]
+[2024-04-29 15:38:34.291] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 15:38:34.301] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 161ms, replayed 0 events, new seq: 416"]
+[2024-04-29 15:43:33.855] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.79 seconds."]
+[2024-04-29 15:43:35.645] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 15:43:35.745] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 100 ms"]
+[2024-04-29 15:43:35.746] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 424"]
+[2024-04-29 15:43:35.815] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 15:43:35.821] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 176ms, replayed 0 events, new seq: 425"]
+[2024-04-29 16:15:23.283] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 16:15:23.416] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 133 ms"]
+[2024-04-29 16:15:23.417] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 460"]
+[2024-04-29 16:15:23.482] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 16:15:23.491] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 208ms, replayed 0 events, new seq: 461"]
+[2024-04-29 16:32:12.071] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.80 seconds."]
+[2024-04-29 16:32:13.873] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 16:32:14.011] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 138 ms"]
+[2024-04-29 16:32:14.012] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 480"]
+[2024-04-29 16:32:14.080] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 16:32:14.087] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 214ms, replayed 0 events, new seq: 481"]
+[2024-04-29 16:37:15.612] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.74 seconds."]
+[2024-04-29 16:37:17.352] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 16:37:17.460] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 108 ms"]
+[2024-04-29 16:37:17.460] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 494"]
+[2024-04-29 16:37:17.526] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 16:37:17.527] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 175ms, replayed 0 events, new seq: 495"]
+[2024-04-29 17:12:50.330] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 17:12:50.457] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 127 ms"]
+[2024-04-29 17:12:50.458] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 578"]
+[2024-04-29 17:12:50.523] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 17:12:50.533] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 203ms, replayed 0 events, new seq: 579"]
+[2024-04-29 18:08:52.123] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.99 seconds."]
+[2024-04-29 18:08:55.143] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 18:08:55.275] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 132 ms"]
+[2024-04-29 18:08:55.275] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 702"]
+[2024-04-29 18:08:55.348] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 18:08:55.348] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 205ms, replayed 0 events, new seq: 703"]
+[2024-04-29 18:09:10.861] [278545] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-04-29 18:09:10.861] [278545] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-04-29 18:09:10.861] [278545] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-04-29 18:09:10.861] [278545] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-04-29 18:09:10.861] [278545] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-04-29 18:09:10.909] [278545] (region_latency_tester.cpp:283): Average RTT for region atlanta is 24
+[2024-04-29 18:09:10.909] [278545] (region_latency_tester.cpp:283): Average RTT for region us-east is 35
+[2024-04-29 18:09:10.909] [278545] (region_latency_tester.cpp:283): Average RTT for region us-south is 40
+[2024-04-29 18:09:10.909] [278545] (region_latency_tester.cpp:283): Average RTT for region newark is 40.75
+[2024-04-29 18:09:10.909] [278545] (region_latency_tester.cpp:283): Average RTT for region us-central is 47
+[2024-04-29 18:13:55.638] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.49 seconds."]
+[2024-04-29 18:13:57.124] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 18:13:57.202] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 78 ms"]
+[2024-04-29 18:13:57.203] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 715"]
+[2024-04-29 18:13:57.266] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 18:13:57.272] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 148ms, replayed 0 events, new seq: 716"]
+[2024-04-29 18:15:12.119] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.58 seconds."]
+[2024-04-29 18:15:14.703] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 18:15:14.829] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 126 ms"]
+[2024-04-29 18:15:14.830] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 719"]
+[2024-04-29 18:15:14.899] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 18:15:14.899] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 196ms, replayed 0 events, new seq: 720"]
+[2024-04-29 18:20:13.641] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 2.71 seconds."]
+[2024-04-29 18:20:16.355] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-04-29 18:20:16.467] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 111 ms"]
+[2024-04-29 18:20:16.467] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUME] resuming session b400c69d398ae054b6877c5434817286, seq: 731"]
+[2024-04-29 18:20:16.531] [20002] (discord.cpp:753): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2024-04-29 18:20:16.532] [20002] (discord.cpp:753): JS console: ["%c[GatewaySocket]","[RESUMED] took 177ms, replayed 0 events, new seq: 732"]

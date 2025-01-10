@@ -1,0 +1,6 @@
+2024/02/24-16:16:22.562 44e6 Reusing MANIFEST /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/24-16:16:22.563 44e6 Recovering log #3
+2024/02/24-16:16:22.686 44e6 Reusing old log /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2024/02/24-16:16:49.609 44e7 Level-0 table #5: started
+2024/02/24-16:16:49.735 44e7 Level-0 table #5: 2635371 bytes OK
+2024/02/24-16:16:49.774 44e7 Delete type=0 #3

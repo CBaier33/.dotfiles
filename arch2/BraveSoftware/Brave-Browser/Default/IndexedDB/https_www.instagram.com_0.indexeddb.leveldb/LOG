@@ -1,0 +1,15 @@
+2024/04/16-15:24:25.501 706 Reusing MANIFEST /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/04/16-15:24:25.502 706 Recovering log #4
+2024/04/16-15:24:25.502 706 Reusing old log /home/topher2/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/000004.log 
+2024/04/16-15:24:34.305 707 Level-0 table #8: started
+2024/04/16-15:24:34.341 707 Level-0 table #8: 87538 bytes OK
+2024/04/16-15:24:34.376 707 Delete type=0 #4
+2024/04/16-15:24:34.377 707 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/04/16-15:24:34.377 707 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x07\x01\x03\x01\x17\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00q\x00u\x00o\x00t\x00a\x00_\x00c\x00h\x00e\x00c\x00k\x00_\x00k\x00e\x00y' @ 9776 : 1
+2024/04/16-15:24:34.377 707 Compacting 1@1 + 1@2 files
+2024/04/16-15:24:34.416 707 Generated table #9@1: 1912 keys, 56554 bytes
+2024/04/16-15:24:34.416 707 Compacted 1@1 + 1@2 files => 56554 bytes
+2024/04/16-15:24:34.451 707 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/04/16-15:24:34.451 707 Delete type=2 #5
+2024/04/16-15:24:34.452 707 Delete type=2 #8
+2024/04/16-15:24:34.452 707 Manual compaction at level-1 from '\x00\x07\x01\x03\x01\x17\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00q\x00u\x00o\x00t\x00a\x00_\x00c\x00h\x00e\x00c\x00k\x00_\x00k\x00e\x00y' @ 9776 : 1 .. (end); will stop at (end)
