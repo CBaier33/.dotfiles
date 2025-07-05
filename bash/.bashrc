@@ -126,4 +126,3 @@ eval "$(starship init bash)"
 
 [ -f "/home/topher/.ghcup/env" ] && . "/home/topher/.ghcup/env" # ghcup-env
 
-export PATH=$PATH:/home/topher/.spicetify

@@ -1,0 +1,9 @@
+* {
+    background:     #1E1E1EFF;  /* main background */
+    background-alt: #2A2A2AFF;  /* alt background (hover, etc) */
+    foreground:     #E8E6E3FF;  /* text */
+    selected:       #F2854DFF;  /* highlight (was #D97742) — slightly brighter orange */
+    active:         #BF8F60FF;  /* secondary accent */
+    urgent:         #B23636FF;  /* alert red */
+}
+

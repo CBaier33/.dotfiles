@@ -1,0 +1,6 @@
+○ mpd.service - Music Player Daemon
+     Loaded: loaded (]8;;file://stmark/usr/lib/systemd/user/mpd.service/usr/lib/systemd/user/mpd.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;32menabled[0m)
+     Active: inactive (dead)
+       Docs: ]8;;man:mpd(1)man:mpd(1)]8;;
+             ]8;;man:mpd.conf(5)man:mpd.conf(5)]8;;
+             ]8;;file:///usr/share/doc/mpd/html/user.htmlfile:///usr/share/doc/mpd/html/user.html]8;;
