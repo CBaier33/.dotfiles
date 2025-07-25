@@ -19,11 +19,12 @@ font pango:monospace 8
 
 # Startup
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xrandr --output HDMI-1-2 --right-of eDP-1-1 --auto
 exec --no-startup-id nm-applet
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec_always --no-startup-id sh -c 'sleep 0.5 && picom --config ~/.config/picom/picom.conf'
-exec_always --no-startup-id nitrogen --set-auto $background
-exec --no-startup-id polybar -c ~/.config/polybar/config.ini
+exec_always feh --bg-fill $background
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
 
