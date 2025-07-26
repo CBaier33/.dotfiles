@@ -43,6 +43,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>w", ":tab new<CR>:Ex<CR>")
 vim.keymap.set("n", "<leader>n", ":tabn<CR>")
 vim.keymap.set("n", "<leader>p", ":tabp<CR>")
+vim.keymap.set("n", "<leader>y", '"+yy')
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("i", "jk", "<Esc>ll")
@@ -194,4 +197,3 @@ require("lazy").setup({
 
 -- Colorscheme
 vim.cmd.colorscheme("carbonfox")
-
