@@ -1,5 +1,5 @@
 # Background
-set $background ~/Pictures/gatlinburg.jpg
+set $background ~/Pictures/goals.jpg
 
 # Variables
 set $mod Mod4
@@ -20,20 +20,38 @@ font pango:monospace 8
 # Startup
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xrandr --output HDMI-1-2 --right-of eDP-1-1 --auto
+exec --no-startup-id autorandr --change --force
 exec --no-startup-id nm-applet
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec_always --no-startup-id sh -c 'sleep 0.5 && picom --config ~/.config/picom/picom.conf'
 exec_always feh --bg-fill $background
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-
-
 # Window behavior
 floating_modifier $mod
 tiling_drag modifier titlebar
 
+# Monitors
+set $monitor1 "eDp-1"
+set $monitor2 "HDMI-2"
+
+# Display assignment
+workspace $ws1 output $monitor1
+workspace $ws2 output $monitor1
+workspace $ws3 output $monitor1
+workspace $ws4 output $monitor1
+workspace $ws5 output $monitor1
+workspace $ws6 output $monitor2
+workspace $ws7 output $monitor2
+workspace $ws8 output $monitor2
+workspace $ws9 output $monitor2
+workspace $ws10 output $monitor2
+
 # Application launch
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st
+bindsym $mod+b exec brave
+bindsym $mod+m exec signal
+bindsym $mod+n exec kitty
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 bindsym $mod+Shift+q kill
 
@@ -58,8 +76,6 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Layout
-bindsym $mod+\ split h
-bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -134,6 +150,7 @@ bindsym Shift+Print exec --no-startup-id ffmpeg -video_size 1920x1080 -framerate
 bindsym Ctrl+$mod+l exec --no-startup-id i3lock \
   --ignore-empty-password \
   --clock \
+  --date-str="%B %d %Y" \
   --indicator \
   --inside-color=F5E7DEFF \
   --ring-color=4b5263FF \
@@ -149,7 +166,6 @@ bindsym Ctrl+$mod+l exec --no-startup-id i3lock \
   --radius=120 \
   --image $background \
   --tiling
-      
 
 # Window borders
 # Apply 1px border to all windows
@@ -165,5 +181,3 @@ client.urgent           #ffffffff #ffffffff #ffffffff #ffffffff #ffffffff
 # Gaps
 gaps inner 10
 gaps outer 10
-
-
