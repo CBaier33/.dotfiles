@@ -1,6 +1,8 @@
+---@diagnostic disable: undefined-global
 -- Christopher's neovim config
 
 -- Bootstrap lazy.nvim
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -18,9 +20,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
+--
 -- Options
+--
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 2
@@ -31,36 +35,64 @@ vim.opt.expandtab = true
 vim.opt.guicursor = "a:block-blinkon0"
 vim.opt.hlsearch = false
 vim.opt.cursorline = true
+vim.opt.winborder = "rounded"
+vim.opt.termguicolors = true
+vim.opt.swapfile = false
 vim.cmd [[hi CursorLine guibg=#2a2a2a]]
 
+--
 -- Keymaps
+--
+
+-- file tree
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- quickly move selection
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-f>", ":NERDTreeToggle<CR>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "<leader>w", ":tab new<CR>:Ex<CR>")
-vim.keymap.set("n", "<leader>n", ":tabn<CR>")
-vim.keymap.set("n", "<leader>p", ":tabp<CR>")
-vim.keymap.set("n", "<leader>y", '"+yy')
-vim.keymap.set("v", "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>p", '"+p')
-vim.keymap.set("i", "<C-c>", "<Esc>")
+
+-- Copy Paste
+vim.keymap.set("n", "<leader>n", ":tabn<CR>") -- switch tabs
+vim.keymap.set("n", "<leader>y", '"+yy') -- copy to clipboard
+vim.keymap.set("v", "<leader>y", '"+y') -- copy selection to clipboard
+vim.keymap.set("n", "<leader>p", '"+p') -- paste clipboard content
+
+
+-- Normal mode window navigation
+vim.keymap.set('n', '<A-h>', '<C-w>h', opts)
+vim.keymap.set('n', '<A-j>', '<C-w>j', opts)
+vim.keymap.set('n', '<A-k>', '<C-w>k', opts)
+vim.keymap.set('n', '<A-l>', '<C-w>l', opts)
+
+-- Insert mode window navigation (exit insert mode first)
+vim.keymap.set('i', '<A-h>', '<C-\\><C-N><C-w>h', opts)
+vim.keymap.set('i', '<A-j>', '<C-\\><C-N><C-w>j', opts)
+vim.keymap.set('i', '<A-k>', '<C-\\><C-N><C-w>k', opts)
+vim.keymap.set('i', '<A-l>', '<C-\\><C-N><C-w>l', opts)
+
+-- Terminal mode window navigation (exit terminal mode first)
+vim.keymap.set('t', '<A-h>', '<C-\\><C-N><C-w>h', opts)
+vim.keymap.set('t', '<A-j>', '<C-\\><C-N><C-w>j', opts)
+vim.keymap.set('t', '<A-k>', '<C-\\><C-N><C-w>k', opts)
+vim.keymap.set('t', '<A-l>', '<C-\\><C-N><C-w>l', opts)
+
+-- blazingly fast
 vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("i", "jk", "<Esc>ll")
 vim.keymap.set("n", "<leader>b", ":TransparentToggle<CR>")
 vim.keymap.set("n", ";", ":")
 
-
 require("lazy").setup({
   spec = {
+    {'echasnovski/mini.pick', version='*'},
     {'vim-airline/vim-airline'},
     {'vim-airline/vim-airline-themes'},
     {'preservim/nerdtree'},
     {'tpope/vim-surround'},
     {'alvan/vim-closetag'},
     {'jiangmiao/auto-pairs'},
+    {'namrabtw/rusty.nvim'},
 
     {'nvim-telescope/telescope.nvim',
       tag = '0.1.8',
@@ -154,7 +186,10 @@ require("lazy").setup({
           vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
           vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
           vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-          vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+          vim.keymap.set('n', '<leader>o', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+          vim.keymap.set('n', '<leader>e', function()
+            vim.diagnostic.open_float(nil, { focus = true, border = 'rounded' })
+          end, { desc = "Show diagnostic under cursor" })
         end
 
         lsp_zero.extend_lspconfig({
@@ -174,26 +209,25 @@ require("lazy").setup({
       end,
     },
 
-    {
-      "nvim-treesitter/nvim-treesitter",
-      build = ":TSUpdate",
-      config = function()
-        local configs = require("nvim-treesitter.configs")
-        configs.setup({
-          ensure_installed = {
-            "c", "lua", "vim", "vimdoc", "query",
-            "elixir", "heex", "javascript", "html"
-          },
-          auto_install = true,
-          indent = { enable = true },
-        })
-      end,
-    },
+    --{
+    --  "nvim-treesitter/nvim-treesitter",
+    --  config = function()
+    --    local configs = require("nvim-treesitter.configs")
+    --    configs.setup({
+    --      auto_install = true,
+    --      indent = { enable = true },
+    --    })
+    --  end,
+    --},
   },
 
   install = { colorscheme = { "carbonfox"} },
   checker = { enabled = true },
 })
 
+require "mini.pick".setup()
+
 -- Colorscheme
-vim.cmd.colorscheme("carbonfox")
+vim.cmd.colorscheme("retrobox")
+vim.cmd("AirlineTheme base16_gruvbox_dark_pale")
+
