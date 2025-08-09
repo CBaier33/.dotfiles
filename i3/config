@@ -123,14 +123,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3? This ends your X se
 
 # Resize mode
 mode "resize" {
-    bindsym j resize shrink width 10 px or 10 ppt
-    bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink height 10 px or 10 ppt
-    bindsym semicolon resize grow width 10 px or 10 ppt
-    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym h resize grow width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize shrink  width 10 px or 10 ppt
+    bindsym Left resize grow width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Right resize shrink width 10 px or 10 ppt
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
