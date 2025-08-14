@@ -1,0 +1,10 @@
+! Map F1–F4 to volume/mic controls
+keycode 67 = XF86AudioMute
+keycode 68 = XF86AudioLowerVolume
+keycode 69 = XF86AudioRaiseVolume
+keycode 70 = XF86AudioMicMute
+
+! Map Caps Lock to Left Super
+keycode 66 = Super_L
+
+
