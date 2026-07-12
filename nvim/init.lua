@@ -8,8 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
   local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
-    vim.api.nvim_echo({
-      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+    vim.api.nvim_echo({ { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
       { out, "WarningMsg" },
       { "\nPress any key to exit..." },
     }, true, {})
@@ -46,14 +45,17 @@ vim.cmd [[hi CursorLine guibg=#2a2a2a]]
 
 -- file tree
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pn", vim.cmd.Vex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- quickly move selection
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-f>", ":NERDTreeToggle<CR>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<leader>t", ":tabnew<CR>:Ex<CR>") -- switch tabs
+vim.keymap.set("n", "<leader>n", ":tabn<CR>") -- switch tabs
+vim.keymap.set("n", "<leader>p", ':tabp') -- paste clipboard content
 
 -- Copy Paste
-vim.keymap.set("n", "<leader>n", ":tabn<CR>") -- switch tabs
 vim.keymap.set("n", "<leader>y", '"+yy') -- copy to clipboard
 vim.keymap.set("v", "<leader>y", '"+y') -- copy selection to clipboard
 vim.keymap.set("n", "<leader>p", '"+p') -- paste clipboard content
@@ -88,7 +90,7 @@ require("lazy").setup({
     {'echasnovski/mini.pick', version='*'},
     {'vim-airline/vim-airline'},
     {'vim-airline/vim-airline-themes'},
-    {'preservim/nerdtree'},
+--    {'preservim/nerdtree'},
     {'tpope/vim-surround'},
     {'alvan/vim-closetag'},
     {'jiangmiao/auto-pairs'},
@@ -164,6 +166,16 @@ require("lazy").setup({
     },
 
     {
+      'nvim-flutter/flutter-tools.nvim',
+      lazy = false,
+      dependencies = {
+          'nvim-lua/plenary.nvim',
+          'stevearc/dressing.nvim', -- optional for vim.ui.select
+      },
+      config = true,
+    },
+
+    {
       'neovim/nvim-lspconfig',
       cmd = {'LspInfo', 'LspInstall', 'LspStart'},
       event = {'BufReadPre', 'BufNewFile'},
@@ -209,16 +221,17 @@ require("lazy").setup({
       end,
     },
 
-    --{
-    --  "nvim-treesitter/nvim-treesitter",
-    --  config = function()
-    --    local configs = require("nvim-treesitter.configs")
-    --    configs.setup({
-    --      auto_install = true,
-    --      indent = { enable = true },
-    --    })
-    --  end,
-    --},
+    {
+      "nvim-treesitter/nvim-treesitter",
+      config = function()
+        local configs = require("nvim-treesitter.configs")
+        configs.setup({
+          auto_install = false,
+          sync_install = false,
+          indent = { enable = true },
+        })
+      end,
+    },
   },
 
   install = { colorscheme = { "carbonfox"} },
@@ -226,6 +239,7 @@ require("lazy").setup({
 })
 
 require "mini.pick".setup()
+require("flutter-tools").setup {} -- use defaults
 
 -- Colorscheme
 vim.cmd.colorscheme("retrobox")
