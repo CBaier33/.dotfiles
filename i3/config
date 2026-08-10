@@ -1,5 +1,5 @@
 # Background
-set $background ~/Pictures/goals.jpg
+set $background ~/Pictures/wallpaper.jpg
 
 # Variables
 set $mod Mod4
@@ -17,11 +17,17 @@ set $ws10 "10"
 # Font
 font pango:monospace 8
 
+# Monitors
+set $monitor2 "eDP-1"
+set $monitor1 "DP-1"
+
 # Startup
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xrandr --output HDMI-1-2 --right-of eDP-1-1 --auto
-exec --no-startup-id autorandr --change --force
+exec --no-startup-id xrandr --output $monitor1 --pos 0x0 --mode 3440x1440 --output $monitor2 --pos 3440x0 --mode 1920x1080
+#exec --no-startup-id xrandr --output HDMI-1-2 --right-of eDP-1-1 --auto
+#exec --no-startup-id autorandr --change --force
 exec --no-startup-id nm-applet
+exec --no-startup-id setxkbmap -option caps:none
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec_always --no-startup-id sh -c 'sleep 0.5 && picom --config ~/.config/picom/picom.conf'
 exec_always feh --bg-fill $background
@@ -31,9 +37,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 floating_modifier $mod
 tiling_drag modifier titlebar
 
-# Monitors
-set $monitor1 "eDp-1"
-set $monitor2 "HDMI-2"
 
 # Display assignment
 workspace $ws1 output $monitor1
@@ -51,8 +54,12 @@ workspace $ws10 output $monitor2
 bindsym $mod+Return exec st
 bindsym $mod+b exec brave
 bindsym $mod+m exec signal
-bindsym $mod+n exec kitty
+bindsym $mod+n exec obsidian
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
+bindsym $mod+plus exec ~/.config/scripts/bookmarks/rofi_bookmarks.sh
+bindsym $mod+slash exec ~/.config/scripts/coinflow/fetch_account_data.sh
+bindsym $mod+Shift+plus exec ~/.config/scripts/bookmarks/add_bookmark.sh
+
 bindsym $mod+Shift+q kill
 
 # Focus movement
@@ -110,6 +117,8 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+## yes.. old habits die hard
+
 # Alt+Tab – focus next window
 bindsym Mod1+Tab workspace next
 
@@ -121,7 +130,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3? This ends your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# Resize mode
+# Resize mode | not sure if these are backwards but i flipped them to be more intuitive
 mode "resize" {
     bindsym h resize grow width 10 px or 10 ppt
     bindsym j resize grow height 10 px or 10 ppt
@@ -147,27 +156,28 @@ bindsym Print exec --no-startup-id flameshot gui --clipboard
 bindsym Shift+Print exec --no-startup-id ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 ~/Videos/screencast.mp4
 
 
-# Lock screen
+# Lock screen -> a little jank but it keeps everything in one file
 # Lockscreen script
-bindsym Ctrl+$mod+l exec --no-startup-id i3lock \
-  --ignore-empty-password \
-  --clock \
-  --date-str="%B %d %Y" \
-  --indicator \
-  --inside-color=F5E7DEFF \
-  --ring-color=4b5263FF \
-  --line-color=00000000 \
-  --separator-color=00000000 \
-  --verif-color=00000000 \
-  --insidever-color=F5E7DEFF \
-  --ringver-color=F5E7DEFF \
-  --wrong-color=00000000 \
-  --keyhl-color=BF8F60FF \
-  --bshl-color=B23636FF \
-  --ring-width=8 \
-  --radius=120 \
-  --image $background \
-  --tiling
+bindsym Ctrl+$mod+l exec --no-startup-id ~/.config/i3/i3lock.sh $background
+#bindsym Ctrl+$mod+l exec --no-startup-id i3lock \
+#  --ignore-empty-password \
+#  --clock \
+#  --date-str="%B %d %Y" \
+#  --indicator \
+#  --inside-color=F5E7DEFF \
+#  --ring-color=4b5263FF \
+#  --line-color=00000000 \
+#  --separator-color=00000000 \
+#  --verif-color=00000000 \
+#  --insidever-color=F5E7DEFF \
+#  --ringver-color=F5E7DEFF \
+#  --wrong-color=00000000 \
+#  --keyhl-color=BF8F60FF \
+#  --bshl-color=B23636FF \
+#  --ring-width=8 \
+#  --radius=120 \
+#  --image $background \
+#  --tiling
 
 # Window borders
 # Apply 1px border to all windows
@@ -178,7 +188,6 @@ client.focused          #F2854D #F2854D #ffffff #F2854D #F2854D
 client.unfocused        #ffffffff #ffffffff #ffffffff #ffffffff #ffffffff
 client.focused_inactive #ffffffff #ffffffff #ffffffff #ffffffff #ffffffff
 client.urgent           #ffffffff #ffffffff #ffffffff #ffffffff #ffffffff
-
 
 # Gaps
 gaps inner 10

@@ -1,0 +1,1329 @@
+{
+  "guid": "root________",
+  "title": "",
+  "index": 0,
+  "dateAdded": 1754723527972000,
+  "lastModified": 1764214462380000,
+  "id": 1,
+  "typeCode": 2,
+  "type": "text/x-moz-place-container",
+  "root": "placesRoot",
+  "children": [
+    {
+      "guid": "menu________",
+      "title": "menu",
+      "index": 0,
+      "dateAdded": 1754723527972000,
+      "lastModified": 1764099409475000,
+      "id": 2,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "bookmarksMenuFolder",
+      "children": [
+        {
+          "guid": "oLd6OgTAdzNd",
+          "title": "Mozilla Firefox",
+          "index": 0,
+          "dateAdded": 1754723528452000,
+          "lastModified": 1754723528452000,
+          "id": 7,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "_t8VMXjQetP4",
+              "title": "Get Help",
+              "index": 0,
+              "dateAdded": 1754723528452000,
+              "lastModified": 1754723528452000,
+              "id": 8,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://support.mozilla.org/products/firefox",
+              "type": "text/x-moz-place",
+              "uri": "https://support.mozilla.org/products/firefox"
+            },
+            {
+              "guid": "TDSn_sul7utE",
+              "title": "Customize Firefox",
+              "index": 1,
+              "dateAdded": 1754723528452000,
+              "lastModified": 1754723528452000,
+              "id": 9,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize",
+              "type": "text/x-moz-place",
+              "uri": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+            },
+            {
+              "guid": "sYta8v5qkGfr",
+              "title": "Get Involved",
+              "index": 2,
+              "dateAdded": 1754723528452000,
+              "lastModified": 1754723528452000,
+              "id": 10,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.mozilla.org/contribute/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.mozilla.org/contribute/"
+            },
+            {
+              "guid": "r3c09VlxBVFV",
+              "title": "About Us",
+              "index": 3,
+              "dateAdded": 1754723528452000,
+              "lastModified": 1754723528452000,
+              "id": 11,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.mozilla.org/about/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.mozilla.org/about/"
+            }
+          ]
+        },
+        {
+          "guid": "pf1guPiTQLBF",
+          "title": "Bookmarks",
+          "index": 1,
+          "dateAdded": 1764099399406000,
+          "lastModified": 1764099399406000,
+          "id": 61,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "8d9PTCpdFMuV",
+              "title": "LOFT",
+              "index": 0,
+              "dateAdded": 1751664456000000,
+              "lastModified": 1751742517000000,
+              "id": 62,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "A4qwVfQmlCT9",
+                  "title": "AT&T",
+                  "index": 0,
+                  "dateAdded": 1751664428000000,
+                  "lastModified": 1751664428000000,
+                  "id": 63,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.att.com/acctmgmt/overview",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.att.com/acctmgmt/overview"
+                },
+                {
+                  "guid": "4At4Aj874AcG",
+                  "title": "Loft",
+                  "index": 1,
+                  "dateAdded": 1751478663000000,
+                  "lastModified": 1751478663000000,
+                  "id": 64,
+                  "typeCode": 1,
+                  "iconUri": "https://cdn.loftliving.com/favicon.png?v=tag-2025-11-23",
+                  "type": "text/x-moz-place",
+                  "uri": "https://livedistrictcollection.loftliving.com/login"
+                },
+                {
+                  "guid": "UZoigg5b2wyE",
+                  "title": "Duke Energy",
+                  "index": 2,
+                  "dateAdded": 1751666173000000,
+                  "lastModified": 1751666173000000,
+                  "id": 65,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://p-auth.duke-energy.com/my-account/dashboard",
+                  "type": "text/x-moz-place",
+                  "uri": "https://p-auth.duke-energy.com/my-account/dashboard"
+                }
+              ]
+            },
+            {
+              "guid": "GfwzTg3V4EmD",
+              "title": "Finance",
+              "index": 1,
+              "dateAdded": 1754074095000000,
+              "lastModified": 1763350989000000,
+              "id": 66,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "izNrbTToM862",
+                  "title": "Capital One",
+                  "index": 0,
+                  "dateAdded": 1751376880000000,
+                  "lastModified": 1751376880000000,
+                  "id": 67,
+                  "typeCode": 1,
+                  "iconUri": "https://myaccounts.capitalone.com/ease-web/ease-web-platform-acb7b8c5a7a04da2ce2463328007290cbb072034/assets/images/favicon.ico",
+                  "type": "text/x-moz-place",
+                  "uri": "https://myaccounts.capitalone.com/accountSummary"
+                },
+                {
+                  "guid": "s8UCiFrU0zVB",
+                  "title": "PayPal",
+                  "index": 1,
+                  "dateAdded": 1754088822000000,
+                  "lastModified": 1754088822000000,
+                  "id": 68,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.paypal.com/myaccount/summary?intl=0",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.paypal.com/myaccount/summary?intl=0"
+                },
+                {
+                  "guid": "fNyAoFk0EDIt",
+                  "title": "River",
+                  "index": 2,
+                  "dateAdded": 1755458738000000,
+                  "lastModified": 1755458738000000,
+                  "id": 69,
+                  "typeCode": 1,
+                  "iconUri": "https://river.com/favicons/favicon-5c5635f17aa75809a1403839903634d5.svg?vsn=d",
+                  "type": "text/x-moz-place",
+                  "uri": "https://river.com/overview"
+                },
+                {
+                  "guid": "8_m03jg--rQb",
+                  "title": "Fidelity",
+                  "index": 3,
+                  "dateAdded": 1763272218000000,
+                  "lastModified": 1763272218000000,
+                  "id": 70,
+                  "typeCode": 1,
+                  "iconUri": "https://digital.fidelity.com/ctgw/digital/prelogin/assets/favicon.ico",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.fidelity.com/"
+                }
+              ]
+            },
+            {
+              "guid": "Ce5toyzN25_r",
+              "title": "HomeLab",
+              "index": 2,
+              "dateAdded": 1753995277000000,
+              "lastModified": 1763862453000000,
+              "id": 71,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "UJNvgAJ2QZhL",
+                  "title": "Smart Home Manager – AT&T",
+                  "index": 0,
+                  "dateAdded": 1753980529000000,
+                  "lastModified": 1753980529000000,
+                  "id": 72,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.att.com/support/internet/home/#/login?haloSuccess=true&lt=SShoZ1o1Oih8Xlk8Onc-NXsjU1xyezcmOV9zalpRWnFqUygrNE80fXxTU1AiLWB0JSpNb0sic3pVX0w8",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.att.com/support/internet/home/#/login?haloSuccess=true&lt=SShoZ1o1Oih8Xlk8Onc-NXsjU1xyezcmOV9zalpRWnFqUygrNE80fXxTU1AiLWB0JSpNb0sic3pVX0w8"
+                },
+                {
+                  "guid": "HY1PnVjiAXpd",
+                  "title": "Router",
+                  "index": 1,
+                  "dateAdded": 1753974188000000,
+                  "lastModified": 1753974188000000,
+                  "id": 73,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:http://192.168.1.254/",
+                  "type": "text/x-moz-place",
+                  "uri": "http://192.168.1.254/"
+                },
+                {
+                  "guid": "D_Ab_-2y2txr",
+                  "title": "Tailscale",
+                  "index": 2,
+                  "dateAdded": 1754001200000000,
+                  "lastModified": 1754001200000000,
+                  "id": 74,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://login.tailscale.com/admin/machines",
+                  "type": "text/x-moz-place",
+                  "uri": "https://login.tailscale.com/admin/machines"
+                },
+                {
+                  "guid": "wIkfqtr9nYWo",
+                  "title": "Baier Tech",
+                  "index": 3,
+                  "dateAdded": 1758058855000000,
+                  "lastModified": 1758058855000000,
+                  "id": 75,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://cbaier.tech/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://cbaier.tech/"
+                },
+                {
+                  "guid": "Rmp_VlJhsfeT",
+                  "title": "TrueNAS",
+                  "index": 4,
+                  "dateAdded": 1763350989000000,
+                  "lastModified": 1763350989000000,
+                  "id": 76,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:http://192.168.1.238/ui/signin",
+                  "type": "text/x-moz-place",
+                  "uri": "http://192.168.1.238/ui/signin"
+                },
+                {
+                  "guid": "2EVcxIzGZL2W",
+                  "title": "Squarespace",
+                  "index": 5,
+                  "dateAdded": 1763741844000000,
+                  "lastModified": 1763741844000000,
+                  "id": 77,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://account.squarespace.com/domains",
+                  "type": "text/x-moz-place",
+                  "uri": "https://account.squarespace.com/domains"
+                },
+                {
+                  "guid": "wUenDaroSvd_",
+                  "title": "Ionos",
+                  "index": 6,
+                  "dateAdded": 1763862453000000,
+                  "lastModified": 1763862453000000,
+                  "id": 78,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://cloudpanel.ionos.com/panel/app/corevps?ionospanelid=ionosf631d1a3-f963-4937-9c94-93eef98605c39837#/servers",
+                  "type": "text/x-moz-place",
+                  "uri": "https://cloudpanel.ionos.com/panel/app/corevps?ionospanelid=ionosf631d1a3-f963-4937-9c94-93eef98605c39837#/servers"
+                }
+              ]
+            },
+            {
+              "guid": "wbSvWaJm8Aj6",
+              "title": "Social",
+              "index": 3,
+              "dateAdded": 1754074108000000,
+              "lastModified": 1754342890000000,
+              "id": 79,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "ILaabR6AWplo",
+                  "title": "LinkedIn",
+                  "index": 0,
+                  "dateAdded": 1753449470000000,
+                  "lastModified": 1753449470000000,
+                  "id": 80,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.linkedin.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.linkedin.com/"
+                },
+                {
+                  "guid": "Zs7vnT-4vlTZ",
+                  "title": "GroupMe",
+                  "index": 1,
+                  "dateAdded": 1753915929000000,
+                  "lastModified": 1753915929000000,
+                  "id": 81,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://web.groupme.com/chats",
+                  "type": "text/x-moz-place",
+                  "uri": "https://web.groupme.com/chats"
+                },
+                {
+                  "guid": "HZ_q6HMmHPS_",
+                  "title": "VSCO",
+                  "index": 2,
+                  "dateAdded": 1751742517000000,
+                  "lastModified": 1751742517000000,
+                  "id": 82,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://vsco.co/chrispycream333/gallery",
+                  "type": "text/x-moz-place",
+                  "uri": "https://vsco.co/chrispycream333/gallery"
+                },
+                {
+                  "guid": "AeOYdfQO4dBy",
+                  "title": "Instagram",
+                  "index": 3,
+                  "dateAdded": 1754076099000000,
+                  "lastModified": 1754076099000000,
+                  "id": 83,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.instagram.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.instagram.com/"
+                },
+                {
+                  "guid": "j9Wo-7mJyuEZ",
+                  "title": "Home / X",
+                  "index": 4,
+                  "dateAdded": 1754342099000000,
+                  "lastModified": 1754342099000000,
+                  "id": 84,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://x.com/home",
+                  "type": "text/x-moz-place",
+                  "uri": "https://x.com/home"
+                }
+              ]
+            },
+            {
+              "guid": "8tbIAeEmtgr0",
+              "title": "Music",
+              "index": 4,
+              "dateAdded": 1760724729000000,
+              "lastModified": 1760724766000000,
+              "id": 85,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "z_1a28dEf4Nn",
+                  "title": "Spotify for Artists",
+                  "index": 0,
+                  "dateAdded": 1760724761000000,
+                  "lastModified": 1760724761000000,
+                  "id": 86,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://artists.spotify.com/c/artist/3ydIR5JaWzFd5dj9x9ITt9/home",
+                  "type": "text/x-moz-place",
+                  "uri": "https://artists.spotify.com/c/artist/3ydIR5JaWzFd5dj9x9ITt9/home"
+                }
+              ]
+            },
+            {
+              "guid": "R_oQ8I-vsqUa",
+              "title": "Email",
+              "index": 5,
+              "dateAdded": 1754074155000000,
+              "lastModified": 1754074158000000,
+              "id": 87,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "Tsa_-6MMFn80",
+                  "title": "Proton Mail",
+                  "index": 0,
+                  "dateAdded": 1753281396000000,
+                  "lastModified": 1753281396000000,
+                  "id": 88,
+                  "typeCode": 1,
+                  "iconUri": "https://mail.proton.me/assets/static/favicon.d47d3d0bef6d338e377a.svg",
+                  "type": "text/x-moz-place",
+                  "uri": "https://mail.proton.me/u/0/inbox"
+                }
+              ]
+            },
+            {
+              "guid": "b0_Wi0Jw6Vg3",
+              "title": "News",
+              "index": 6,
+              "dateAdded": 1753149218000000,
+              "lastModified": 1754168784000000,
+              "id": 89,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "OBqyXBDqDYz6",
+                  "title": "Ground News",
+                  "index": 0,
+                  "dateAdded": 1751839595000000,
+                  "lastModified": 1751839595000000,
+                  "id": 90,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://ground.news/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://ground.news/"
+                },
+                {
+                  "guid": "021pJpiGHOek",
+                  "title": "DW",
+                  "index": 1,
+                  "dateAdded": 1753149251000000,
+                  "lastModified": 1753149251000000,
+                  "id": 91,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.dw.com/en/top-stories/s-9097",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.dw.com/en/top-stories/s-9097"
+                },
+                {
+                  "guid": "4yvlT79ct0rq",
+                  "title": "RealClearPolitics",
+                  "index": 2,
+                  "dateAdded": 1753149270000000,
+                  "lastModified": 1753149270000000,
+                  "id": 92,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://www.realclearpolitics.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.realclearpolitics.com/"
+                },
+                {
+                  "guid": "G_xKl_1lQbEz",
+                  "title": "Hacker News",
+                  "index": 3,
+                  "dateAdded": 1754168773000000,
+                  "lastModified": 1754168773000000,
+                  "id": 93,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://news.ycombinator.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://news.ycombinator.com/"
+                }
+              ]
+            },
+            {
+              "guid": "9gzQ9kUlq6Ta",
+              "title": "Dev",
+              "index": 7,
+              "dateAdded": 1754074139000000,
+              "lastModified": 1763386993000000,
+              "id": 94,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "gNi4JaieMupT",
+                  "title": "GitHub",
+                  "index": 0,
+                  "dateAdded": 1753150761000000,
+                  "lastModified": 1753150761000000,
+                  "id": 95,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://github.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://github.com/"
+                },
+                {
+                  "guid": "skh9EZdSSfY4",
+                  "title": "ChatGPT",
+                  "index": 1,
+                  "dateAdded": 1751572233000000,
+                  "lastModified": 1751572233000000,
+                  "id": 96,
+                  "typeCode": 1,
+                  "iconUri": "https://cdn.oaistatic.com/assets/favicon-l4nq08hd.svg",
+                  "type": "text/x-moz-place",
+                  "uri": "https://chatgpt.com/"
+                },
+                {
+                  "guid": "ZBAtor2cJxZe",
+                  "title": "Taiga",
+                  "index": 2,
+                  "dateAdded": 1758513882000000,
+                  "lastModified": 1758513882000000,
+                  "id": 97,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://taiga.cbaier.tech/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://taiga.cbaier.tech/"
+                },
+                {
+                  "guid": "T5k5rWOAxyPc",
+                  "title": "2FAuth",
+                  "index": 3,
+                  "dateAdded": 1756439866000000,
+                  "lastModified": 1756439866000000,
+                  "id": 98,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://mfa.cbaier.tech/accounts",
+                  "type": "text/x-moz-place",
+                  "uri": "https://mfa.cbaier.tech/accounts"
+                },
+                {
+                  "guid": "itBlkE9O9_N0",
+                  "title": "LeetCode",
+                  "index": 4,
+                  "dateAdded": 1757939795000000,
+                  "lastModified": 1757939795000000,
+                  "id": 99,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://leetcode.com/problemset/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://leetcode.com/problemset/"
+                },
+                {
+                  "guid": "57NoWUSzssgM",
+                  "title": "NeetCode",
+                  "index": 5,
+                  "dateAdded": 1757968083000000,
+                  "lastModified": 1757968083000000,
+                  "id": 100,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://neetcode.io/roadmap",
+                  "type": "text/x-moz-place",
+                  "uri": "https://neetcode.io/roadmap"
+                },
+                {
+                  "guid": "xAlDa60UGd8G",
+                  "title": "YouTube",
+                  "index": 6,
+                  "dateAdded": 1758060896000000,
+                  "lastModified": 1758060896000000,
+                  "id": 101,
+                  "typeCode": 1,
+                  "iconUri": "https://www.youtube.com/s/desktop/9d55444e/img/favicon_144x144.png",
+                  "type": "text/x-moz-place",
+                  "uri": "https://www.youtube.com/"
+                },
+                {
+                  "guid": "hpPtcrXLkn0L",
+                  "title": "Get started - Trilium Notes",
+                  "index": 7,
+                  "dateAdded": 1763386993000000,
+                  "lastModified": 1763386993000000,
+                  "id": 102,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://triliumnotes.org/en/get-started",
+                  "type": "text/x-moz-place",
+                  "uri": "https://triliumnotes.org/en/get-started"
+                }
+              ]
+            },
+            {
+              "guid": "QY5vAlxf3i9s",
+              "title": "Chess",
+              "index": 8,
+              "dateAdded": 1759859902000000,
+              "lastModified": 1760462982000000,
+              "id": 103,
+              "typeCode": 2,
+              "type": "text/x-moz-place-container",
+              "children": [
+                {
+                  "guid": "GADfPdMbf5FZ",
+                  "title": "chess tempo",
+                  "index": 0,
+                  "dateAdded": 1759859926000000,
+                  "lastModified": 1759859926000000,
+                  "id": 104,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://chesstempo.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://chesstempo.com/"
+                },
+                {
+                  "guid": "f3yUqNLXbWxv",
+                  "title": "lichess",
+                  "index": 1,
+                  "dateAdded": 1760017049000000,
+                  "lastModified": 1760017049000000,
+                  "id": 105,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://lichess.org/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://lichess.org/"
+                },
+                {
+                  "guid": "jljJsG2N6gVS",
+                  "title": "chessfox",
+                  "index": 2,
+                  "dateAdded": 1760462982000000,
+                  "lastModified": 1760462982000000,
+                  "id": 106,
+                  "typeCode": 1,
+                  "iconUri": "fake-favicon-uri:https://chessfox.com/",
+                  "type": "text/x-moz-place",
+                  "uri": "https://chessfox.com/"
+                }
+              ]
+            },
+            {
+              "guid": "cKx7Yvcl4Z2W",
+              "title": "OpenStreetMap",
+              "index": 9,
+              "dateAdded": 1754704579000000,
+              "lastModified": 1754704579000000,
+              "id": 107,
+              "typeCode": 1,
+              "iconUri": "https://www.openstreetmap.org/assets/favicon-194x194-79d3fb0152c735866e64b1d7535d504483cd13c2fad0131a6142bd9629d30de2.png",
+              "type": "text/x-moz-place",
+              "uri": "https://www.openstreetmap.org/#map=12/35.7637/-78.8297"
+            },
+            {
+              "guid": "yzpSfDaOWmcH",
+              "title": "librephone Project",
+              "index": 10,
+              "dateAdded": 1762802190000000,
+              "lastModified": 1762802190000000,
+              "id": 108,
+              "typeCode": 1,
+              "type": "text/x-moz-place",
+              "uri": "https://librephone.fsf.org/"
+            },
+            {
+              "guid": "gTjB8_Tp8ymH",
+              "title": "Area Chart - Basic ⋅ Storybook",
+              "index": 11,
+              "dateAdded": 1762921208000000,
+              "lastModified": 1762921208000000,
+              "id": 109,
+              "typeCode": 1,
+              "type": "text/x-moz-place",
+              "uri": "https://elastic.github.io/elastic-charts/storybook/?path=/story/area-chart--basic&globals=toggles.showHeader:true;toggles.showChartTitle:false;toggles.showChartDescription:false;toggles.showChartBoundary:false;theme:light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "guid": "toolbar_____",
+      "title": "toolbar",
+      "index": 1,
+      "dateAdded": 1754723527972000,
+      "lastModified": 1764214462380000,
+      "id": 3,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "toolbarFolder",
+      "children": [
+        {
+          "guid": "F_SItpGvbNbY",
+          "title": "LOFT",
+          "index": 0,
+          "dateAdded": 1751664456000000,
+          "lastModified": 1764099418705000,
+          "id": 13,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "CuRDVrcirBlQ",
+              "title": "AT&T",
+              "index": 0,
+              "dateAdded": 1751664428000000,
+              "lastModified": 1751664428000000,
+              "id": 14,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.att.com/acctmgmt/overview",
+              "type": "text/x-moz-place",
+              "uri": "https://www.att.com/acctmgmt/overview"
+            },
+            {
+              "guid": "_GQ2uvEpNMjt",
+              "title": "Loft",
+              "index": 1,
+              "dateAdded": 1751478663000000,
+              "lastModified": 1751478663000000,
+              "id": 15,
+              "typeCode": 1,
+              "iconUri": "https://cdn.loftliving.com/favicon.png?v=tag-2025-11-23",
+              "type": "text/x-moz-place",
+              "uri": "https://livedistrictcollection.loftliving.com/login"
+            },
+            {
+              "guid": "4lmASvHoo0hc",
+              "title": "Duke Energy",
+              "index": 2,
+              "dateAdded": 1751666173000000,
+              "lastModified": 1751666173000000,
+              "id": 16,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://p-auth.duke-energy.com/my-account/dashboard",
+              "type": "text/x-moz-place",
+              "uri": "https://p-auth.duke-energy.com/my-account/dashboard"
+            }
+          ]
+        },
+        {
+          "guid": "RTzSYIAC50X-",
+          "title": "Finance",
+          "index": 1,
+          "dateAdded": 1754074095000000,
+          "lastModified": 1764182915894000,
+          "id": 17,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "mDvsnue0bpkl",
+              "title": "Capital One",
+              "index": 0,
+              "dateAdded": 1751376880000000,
+              "lastModified": 1751376880000000,
+              "id": 18,
+              "typeCode": 1,
+              "iconUri": "https://myaccounts.capitalone.com/ease-web/ease-web-platform-acb7b8c5a7a04da2ce2463328007290cbb072034/assets/images/favicon.ico",
+              "type": "text/x-moz-place",
+              "uri": "https://myaccounts.capitalone.com/accountSummary"
+            },
+            {
+              "guid": "QYqG4rZyZy2v",
+              "title": "PayPal",
+              "index": 1,
+              "dateAdded": 1754088822000000,
+              "lastModified": 1754088822000000,
+              "id": 19,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.paypal.com/myaccount/summary?intl=0",
+              "type": "text/x-moz-place",
+              "uri": "https://www.paypal.com/myaccount/summary?intl=0"
+            },
+            {
+              "guid": "JFS5k3yKz6Db",
+              "title": "Fidelity",
+              "index": 2,
+              "dateAdded": 1763272218000000,
+              "lastModified": 1763272218000000,
+              "id": 21,
+              "typeCode": 1,
+              "iconUri": "https://digital.fidelity.com/ctgw/digital/prelogin/assets/favicon.ico",
+              "type": "text/x-moz-place",
+              "uri": "https://www.fidelity.com/"
+            }
+          ]
+        },
+        {
+          "guid": "ttgLpr4YMgnl",
+          "title": "Crypto",
+          "index": 2,
+          "dateAdded": 1764182896340000,
+          "lastModified": 1764214462380000,
+          "id": 110,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "s9DTAW3cG9wQ",
+              "title": "River",
+              "index": 0,
+              "dateAdded": 1755458738000000,
+              "lastModified": 1764182915894000,
+              "id": 20,
+              "typeCode": 1,
+              "iconUri": "https://river.com/favicons/favicon-5c5635f17aa75809a1403839903634d5.svg?vsn=d",
+              "type": "text/x-moz-place",
+              "uri": "https://river.com/overview"
+            },
+            {
+              "guid": "-qhw_Vp0QhKO",
+              "title": "$3,024.32 • ETH • Lighter",
+              "index": 1,
+              "dateAdded": 1764182931295000,
+              "lastModified": 1764182931295000,
+              "id": 111,
+              "typeCode": 1,
+              "iconUri": "https://app.lighter.xyz/favicon-16x16.png",
+              "type": "text/x-moz-place",
+              "uri": "https://app.lighter.xyz/trade/ETH/"
+            },
+            {
+              "guid": "4UcW-_wenOlJ",
+              "title": "CoinGecko",
+              "index": 2,
+              "dateAdded": 1764182973888000,
+              "lastModified": 1764182973888000,
+              "id": 112,
+              "typeCode": 1,
+              "iconUri": "https://www.coingecko.com/favicon-96x96.png",
+              "type": "text/x-moz-place",
+              "uri": "https://www.coingecko.com/"
+            },
+            {
+              "guid": "HtgatUkYPqwJ",
+              "title": "Lighter Docs",
+              "index": 3,
+              "dateAdded": 1764214462380000,
+              "lastModified": 1764214462380000,
+              "id": 113,
+              "typeCode": 1,
+              "iconUri": "https://docs.lighter.xyz/~gitbook/image?url=https%3A%2F%2F3669194962-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FUL2QKgoUbvRiSpqVpgNb%252Fsites%252Fsite_vJ2eU%252Ficon%252FK9qfLM7naMfzSsoGYajS%252FCrop%2520Circle%2520Tool%2520Image.png%3Falt%3Dmedia%26token%3D5281e6ca-9df2-43b9-b0c3-df734edc3487&width=48&height=48&sign=3c634bb5&sv=2",
+              "type": "text/x-moz-place",
+              "uri": "https://docs.lighter.xyz/perpetual-futures/public-pools"
+            }
+          ]
+        },
+        {
+          "guid": "qWzvhNqpNAQQ",
+          "title": "HomeLab",
+          "index": 3,
+          "dateAdded": 1753995277000000,
+          "lastModified": 1764099418705000,
+          "id": 22,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "T4hy-G_KHuJi",
+              "title": "Smart Home Manager – AT&T",
+              "index": 0,
+              "dateAdded": 1753980529000000,
+              "lastModified": 1753980529000000,
+              "id": 23,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.att.com/support/internet/home/#/login?haloSuccess=true&lt=SShoZ1o1Oih8Xlk8Onc-NXsjU1xyezcmOV9zalpRWnFqUygrNE80fXxTU1AiLWB0JSpNb0sic3pVX0w8",
+              "type": "text/x-moz-place",
+              "uri": "https://www.att.com/support/internet/home/#/login?haloSuccess=true&lt=SShoZ1o1Oih8Xlk8Onc-NXsjU1xyezcmOV9zalpRWnFqUygrNE80fXxTU1AiLWB0JSpNb0sic3pVX0w8"
+            },
+            {
+              "guid": "0YiRRspMTifz",
+              "title": "Router",
+              "index": 1,
+              "dateAdded": 1753974188000000,
+              "lastModified": 1753974188000000,
+              "id": 24,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:http://192.168.1.254/",
+              "type": "text/x-moz-place",
+              "uri": "http://192.168.1.254/"
+            },
+            {
+              "guid": "83H5M76LAhTD",
+              "title": "Tailscale",
+              "index": 2,
+              "dateAdded": 1754001200000000,
+              "lastModified": 1754001200000000,
+              "id": 25,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://login.tailscale.com/admin/machines",
+              "type": "text/x-moz-place",
+              "uri": "https://login.tailscale.com/admin/machines"
+            },
+            {
+              "guid": "qzRaHQXhk5Go",
+              "title": "Baier Tech",
+              "index": 3,
+              "dateAdded": 1758058855000000,
+              "lastModified": 1758058855000000,
+              "id": 26,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://cbaier.tech/",
+              "type": "text/x-moz-place",
+              "uri": "https://cbaier.tech/"
+            },
+            {
+              "guid": "EeFD11uFP6cd",
+              "title": "TrueNAS",
+              "index": 4,
+              "dateAdded": 1763350989000000,
+              "lastModified": 1763350989000000,
+              "id": 27,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:http://192.168.1.238/ui/signin",
+              "type": "text/x-moz-place",
+              "uri": "http://192.168.1.238/ui/signin"
+            },
+            {
+              "guid": "qBbd0kuhpKOj",
+              "title": "Squarespace",
+              "index": 5,
+              "dateAdded": 1763741844000000,
+              "lastModified": 1763741844000000,
+              "id": 28,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://account.squarespace.com/domains",
+              "type": "text/x-moz-place",
+              "uri": "https://account.squarespace.com/domains"
+            },
+            {
+              "guid": "n-Ub_lJd0trG",
+              "title": "Ionos",
+              "index": 6,
+              "dateAdded": 1763862453000000,
+              "lastModified": 1763862453000000,
+              "id": 29,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://cloudpanel.ionos.com/panel/app/corevps?ionospanelid=ionosf631d1a3-f963-4937-9c94-93eef98605c39837#/servers",
+              "type": "text/x-moz-place",
+              "uri": "https://cloudpanel.ionos.com/panel/app/corevps?ionospanelid=ionosf631d1a3-f963-4937-9c94-93eef98605c39837#/servers"
+            }
+          ]
+        },
+        {
+          "guid": "vaJd8lcHAZQm",
+          "title": "Social",
+          "index": 4,
+          "dateAdded": 1754074108000000,
+          "lastModified": 1764099418705000,
+          "id": 30,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "sDR2rvYdFzR9",
+              "title": "LinkedIn",
+              "index": 0,
+              "dateAdded": 1753449470000000,
+              "lastModified": 1753449470000000,
+              "id": 31,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.linkedin.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.linkedin.com/"
+            },
+            {
+              "guid": "sOEwlaq41WRQ",
+              "title": "GroupMe",
+              "index": 1,
+              "dateAdded": 1753915929000000,
+              "lastModified": 1753915929000000,
+              "id": 32,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://web.groupme.com/chats",
+              "type": "text/x-moz-place",
+              "uri": "https://web.groupme.com/chats"
+            },
+            {
+              "guid": "J2QfpaWfAEm0",
+              "title": "VSCO",
+              "index": 2,
+              "dateAdded": 1751742517000000,
+              "lastModified": 1751742517000000,
+              "id": 33,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://vsco.co/chrispycream333/gallery",
+              "type": "text/x-moz-place",
+              "uri": "https://vsco.co/chrispycream333/gallery"
+            },
+            {
+              "guid": "OnbIM8gx80jn",
+              "title": "Instagram",
+              "index": 3,
+              "dateAdded": 1754076099000000,
+              "lastModified": 1754076099000000,
+              "id": 34,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.instagram.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.instagram.com/"
+            },
+            {
+              "guid": "SdpYfkYnbcF2",
+              "title": "Home / X",
+              "index": 4,
+              "dateAdded": 1754342099000000,
+              "lastModified": 1754342099000000,
+              "id": 35,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://x.com/home",
+              "type": "text/x-moz-place",
+              "uri": "https://x.com/home"
+            }
+          ]
+        },
+        {
+          "guid": "TGj77-MnKDkh",
+          "title": "Music",
+          "index": 5,
+          "dateAdded": 1760724729000000,
+          "lastModified": 1764099418705000,
+          "id": 36,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "_e6ZYT30Gw_K",
+              "title": "Spotify for Artists",
+              "index": 0,
+              "dateAdded": 1760724761000000,
+              "lastModified": 1760724761000000,
+              "id": 37,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://artists.spotify.com/c/artist/3ydIR5JaWzFd5dj9x9ITt9/home",
+              "type": "text/x-moz-place",
+              "uri": "https://artists.spotify.com/c/artist/3ydIR5JaWzFd5dj9x9ITt9/home"
+            }
+          ]
+        },
+        {
+          "guid": "gfTv77qlZv4D",
+          "title": "Email",
+          "index": 6,
+          "dateAdded": 1754074155000000,
+          "lastModified": 1764099418705000,
+          "id": 38,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "En7IFrENeM2U",
+              "title": "Proton Mail",
+              "index": 0,
+              "dateAdded": 1753281396000000,
+              "lastModified": 1753281396000000,
+              "id": 39,
+              "typeCode": 1,
+              "iconUri": "https://mail.proton.me/assets/static/favicon.d47d3d0bef6d338e377a.svg",
+              "type": "text/x-moz-place",
+              "uri": "https://mail.proton.me/u/0/inbox"
+            }
+          ]
+        },
+        {
+          "guid": "6NPg0eBQhW5S",
+          "title": "News",
+          "index": 7,
+          "dateAdded": 1753149218000000,
+          "lastModified": 1764099418705000,
+          "id": 40,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "hrOcM3fB2ulD",
+              "title": "Ground News",
+              "index": 0,
+              "dateAdded": 1751839595000000,
+              "lastModified": 1751839595000000,
+              "id": 41,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://ground.news/",
+              "type": "text/x-moz-place",
+              "uri": "https://ground.news/"
+            },
+            {
+              "guid": "Y78NV7qLsUoS",
+              "title": "DW",
+              "index": 1,
+              "dateAdded": 1753149251000000,
+              "lastModified": 1753149251000000,
+              "id": 42,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.dw.com/en/top-stories/s-9097",
+              "type": "text/x-moz-place",
+              "uri": "https://www.dw.com/en/top-stories/s-9097"
+            },
+            {
+              "guid": "xMNbt8Tyzan0",
+              "title": "RealClearPolitics",
+              "index": 2,
+              "dateAdded": 1753149270000000,
+              "lastModified": 1753149270000000,
+              "id": 43,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.realclearpolitics.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.realclearpolitics.com/"
+            },
+            {
+              "guid": "ctNkj14eIVgZ",
+              "title": "Hacker News",
+              "index": 3,
+              "dateAdded": 1754168773000000,
+              "lastModified": 1754168773000000,
+              "id": 44,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://news.ycombinator.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://news.ycombinator.com/"
+            }
+          ]
+        },
+        {
+          "guid": "zsb1fnQwzpgn",
+          "title": "Dev",
+          "index": 8,
+          "dateAdded": 1754074139000000,
+          "lastModified": 1764099418705000,
+          "id": 45,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "PTfgy3uHTWt2",
+              "title": "GitHub",
+              "index": 0,
+              "dateAdded": 1753150761000000,
+              "lastModified": 1753150761000000,
+              "id": 46,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://github.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://github.com/"
+            },
+            {
+              "guid": "l43odlGLNAjH",
+              "title": "ChatGPT",
+              "index": 1,
+              "dateAdded": 1751572233000000,
+              "lastModified": 1751572233000000,
+              "id": 47,
+              "typeCode": 1,
+              "iconUri": "https://cdn.oaistatic.com/assets/favicon-l4nq08hd.svg",
+              "type": "text/x-moz-place",
+              "uri": "https://chatgpt.com/"
+            },
+            {
+              "guid": "RcW5e9bPb1IO",
+              "title": "Taiga",
+              "index": 2,
+              "dateAdded": 1758513882000000,
+              "lastModified": 1758513882000000,
+              "id": 48,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://taiga.cbaier.tech/",
+              "type": "text/x-moz-place",
+              "uri": "https://taiga.cbaier.tech/"
+            },
+            {
+              "guid": "GRj7NTd5T_Qv",
+              "title": "2FAuth",
+              "index": 3,
+              "dateAdded": 1756439866000000,
+              "lastModified": 1756439866000000,
+              "id": 49,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://mfa.cbaier.tech/accounts",
+              "type": "text/x-moz-place",
+              "uri": "https://mfa.cbaier.tech/accounts"
+            },
+            {
+              "guid": "B4e2-A6ITAvS",
+              "title": "LeetCode",
+              "index": 4,
+              "dateAdded": 1757939795000000,
+              "lastModified": 1757939795000000,
+              "id": 50,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://leetcode.com/problemset/",
+              "type": "text/x-moz-place",
+              "uri": "https://leetcode.com/problemset/"
+            },
+            {
+              "guid": "Y-4dlFWAGmFe",
+              "title": "NeetCode",
+              "index": 5,
+              "dateAdded": 1757968083000000,
+              "lastModified": 1757968083000000,
+              "id": 51,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://neetcode.io/roadmap",
+              "type": "text/x-moz-place",
+              "uri": "https://neetcode.io/roadmap"
+            },
+            {
+              "guid": "3ifvvNOnkUGt",
+              "title": "YouTube",
+              "index": 6,
+              "dateAdded": 1758060896000000,
+              "lastModified": 1758060896000000,
+              "id": 52,
+              "typeCode": 1,
+              "iconUri": "https://www.youtube.com/s/desktop/9d55444e/img/favicon_144x144.png",
+              "type": "text/x-moz-place",
+              "uri": "https://www.youtube.com/"
+            },
+            {
+              "guid": "sbF4D44JQsHq",
+              "title": "Get started - Trilium Notes",
+              "index": 7,
+              "dateAdded": 1763386993000000,
+              "lastModified": 1763386993000000,
+              "id": 53,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://triliumnotes.org/en/get-started",
+              "type": "text/x-moz-place",
+              "uri": "https://triliumnotes.org/en/get-started"
+            }
+          ]
+        },
+        {
+          "guid": "ZLUR4VMtvFZ2",
+          "title": "Chess",
+          "index": 9,
+          "dateAdded": 1759859902000000,
+          "lastModified": 1764099418705000,
+          "id": 54,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "x5O9pAs_cRnH",
+              "title": "chess tempo",
+              "index": 0,
+              "dateAdded": 1759859926000000,
+              "lastModified": 1759859926000000,
+              "id": 55,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://chesstempo.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://chesstempo.com/"
+            },
+            {
+              "guid": "TWWfzAabmi0D",
+              "title": "lichess",
+              "index": 1,
+              "dateAdded": 1760017049000000,
+              "lastModified": 1760017049000000,
+              "id": 56,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://lichess.org/",
+              "type": "text/x-moz-place",
+              "uri": "https://lichess.org/"
+            },
+            {
+              "guid": "KbsJCov6y9xu",
+              "title": "chessfox",
+              "index": 2,
+              "dateAdded": 1760462982000000,
+              "lastModified": 1760462982000000,
+              "id": 57,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://chessfox.com/",
+              "type": "text/x-moz-place",
+              "uri": "https://chessfox.com/"
+            }
+          ]
+        },
+        {
+          "guid": "VB51z1sJwWW7",
+          "title": "OpenStreetMap",
+          "index": 10,
+          "dateAdded": 1754704579000000,
+          "lastModified": 1764099418705000,
+          "id": 58,
+          "typeCode": 1,
+          "iconUri": "https://www.openstreetmap.org/assets/favicon-194x194-79d3fb0152c735866e64b1d7535d504483cd13c2fad0131a6142bd9629d30de2.png",
+          "type": "text/x-moz-place",
+          "uri": "https://www.openstreetmap.org/#map=12/35.7637/-78.8297"
+        },
+        {
+          "guid": "VHLJRhG2o2be",
+          "title": "librephone Project",
+          "index": 11,
+          "dateAdded": 1762802190000000,
+          "lastModified": 1764099418705000,
+          "id": 59,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://librephone.fsf.org/"
+        },
+        {
+          "guid": "jhYjaMP_HSiq",
+          "title": "Area Chart - Basic ⋅ Storybook",
+          "index": 12,
+          "dateAdded": 1762921208000000,
+          "lastModified": 1764099418705000,
+          "id": 60,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://elastic.github.io/elastic-charts/storybook/?path=/story/area-chart--basic&globals=toggles.showHeader:true;toggles.showChartTitle:false;toggles.showChartDescription:false;toggles.showChartBoundary:false;theme:light"
+        }
+      ]
+    },
+    {
+      "guid": "unfiled_____",
+      "title": "unfiled",
+      "index": 3,
+      "dateAdded": 1754723527972000,
+      "lastModified": 1754723528429000,
+      "id": 5,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "unfiledBookmarksFolder"
+    },
+    {
+      "guid": "mobile______",
+      "title": "mobile",
+      "index": 4,
+      "dateAdded": 1754723527980000,
+      "lastModified": 1754723528429000,
+      "id": 6,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "mobileFolder"
+    }
+  ]
+}
